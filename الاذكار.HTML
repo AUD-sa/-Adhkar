@@ -35,7 +35,6 @@
            --progress-fill: #00acc1;
        }
 
-
         body {
             font-family: 'Tajawal', sans-serif;
             background-color: var(--background-color);
@@ -73,7 +72,6 @@
              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
-
 
           .btn {
            background-color: var(--primary-color);
@@ -530,7 +528,6 @@
         progressBarFill.style.width = `${progress * 100}%`;
      }
 
-
     function countOrNextDhikr(type) {
             const countBtn = document.getElementById(`${type}-count-btn`);
             if(countBtn.classList.contains('completed')){
@@ -557,7 +554,7 @@
    function moveToNext(type){
         const countBtn = document.getElementById(`${type}-count-btn`);
           if (countBtn.classList.contains('completed')) {
-                 const currentIndex = currentDhikrIndex[type];
+                  const currentIndex = currentDhikrIndex[type];
                   if (!completedDhikr[type].includes(currentIndex)) {
                        completedDhikr[type].push(currentIndex);
               }
